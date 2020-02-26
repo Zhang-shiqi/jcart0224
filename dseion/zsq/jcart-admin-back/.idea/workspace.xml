@@ -11,6 +11,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -28,13 +29,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.zsq.jcartadminback.controller" />
       <recent name="io.zsq.jcartadminback.dto.out" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources" />
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources\io.zsq.jcartadministrationback.dao" />
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -52,7 +59,7 @@
   <component name="RunManager">
     <configuration name="JcartAdminBack" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jcart-admin-back" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.zsq.jcartadminback.JcartAdminBack" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.zsq.jcartadminback.service.JcartAdminBack" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,7 +75,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582616948731</updated>
-      <workItem from="1582616951754" duration="6687000" />
+      <workItem from="1582616951754" duration="7043000" />
+      <workItem from="1582702725072" duration="7378000" />
     </task>
     <servers />
   </component>
