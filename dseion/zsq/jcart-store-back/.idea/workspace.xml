@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb6ae8d-638b-43d2-8da1-2dea93930e2a" name="Default Changelist" comment="" />
+    <list default="true" id="6ca9e75c-d6d0-41b4-8bd1-634f90b883f2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -25,13 +17,17 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1YFSfbPaO2y5VE8VgH5WfaDidwK" />
+  <component name="ProjectId" id="1YQl3m7tngrM22CDzfglqLWABxP" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jcart-store-back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/zsq/jcartstoreback" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-store-back\src\main\java\io\zsq\jcartstoreback" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,18 +41,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="JcartStoreBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jcart-store-back" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.zsq.jcartstoreback.JcartStoreBackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3cb6ae8d-638b-43d2-8da1-2dea93930e2a" name="Default Changelist" comment="" />
-      <created>1582536953932</created>
+      <changelist id="6ca9e75c-d6d0-41b4-8bd1-634f90b883f2" name="Default Changelist" comment="" />
+      <created>1582882501941</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582536953932</updated>
-      <workItem from="1582536955801" duration="20000" />
-      <workItem from="1582876004399" duration="6498000" />
+      <updated>1582882501941</updated>
+      <workItem from="1582882506714" duration="150000" />
     </task>
     <servers />
   </component>

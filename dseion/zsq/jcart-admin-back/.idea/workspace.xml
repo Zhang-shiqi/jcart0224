@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jcart-administration-front" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -39,6 +39,7 @@
       <recent name="io.zsq.jcartadminback.dto.out" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback\dto\out" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources\io.zsq.jcartadministrationback.dao" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback" />
@@ -77,6 +78,9 @@
       <updated>1582616948731</updated>
       <workItem from="1582616951754" duration="7043000" />
       <workItem from="1582702725072" duration="7378000" />
+      <workItem from="1582783568451" duration="6583000" />
+      <workItem from="1582850088138" duration="688000" />
+      <workItem from="1582875768394" duration="233000" />
     </task>
     <servers />
   </component>

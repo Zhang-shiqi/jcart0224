@@ -97,7 +97,7 @@
   <update id="updateByPrimaryKey" parameterType="io.zsq.jcartadminback.po.Address">
     update jcart_address
     set customer_id = #{customerId,jdbcType=INTEGER},
-      receiver_name = #{receiverName,jdbcType=VARCHAR},
+      receiver_name = #{receiverName,jdbcType=VARCHAR},/
       receiver_mobile = #{receiverMobile,jdbcType=VARCHAR},
       content = #{content,jdbcType=VARCHAR},
       tag = #{tag,jdbcType=VARCHAR}
