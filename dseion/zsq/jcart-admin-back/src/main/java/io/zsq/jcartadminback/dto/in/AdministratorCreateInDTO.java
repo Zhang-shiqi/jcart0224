@@ -1,17 +1,11 @@
 package io.zsq.jcartadminback.dto.in;
 
 public class AdministratorCreateInDTO {
-
     private String username;
-
     private String password;
-
     private String realName;
-
     private String email;
-
     private String avatarUrl;
-
     private Byte status;
 
     public String getUsername() {

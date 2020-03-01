@@ -2,7 +2,6 @@ package io.zsq.jcartadminback.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
-
 import com.github.pagehelper.PageHelper;
 import io.zsq.jcartadminback.dao.ProductDetailMapper;
 import io.zsq.jcartadminback.dao.ProductMapper;
@@ -13,6 +12,7 @@ import io.zsq.jcartadminback.dto.out.ProductShowOutDTO;
 import io.zsq.jcartadminback.po.Product;
 import io.zsq.jcartadminback.po.ProductDetail;
 import io.zsq.jcartadminback.service.ProductService;
+import io.zsq.jcartadminback.dto.in.ProductUpdateInDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,8 +26,7 @@ public class ProductServiceImpl implements ProductService {
     private ProductMapper productMapper;
 
     @Autowired
-    private ProductDetailMapper  productDetailMapper;
-
+    private ProductDetailMapper productDetailMapper;
 
     @Override
     @Transactional
@@ -43,9 +42,7 @@ public class ProductServiceImpl implements ProductService {
         product.setMainPicUrl(productCreateInDTO.getMainPicUrl());
         product.setRewordPoints(productCreateInDTO.getRewordPoints());
         product.setSortOrder(productCreateInDTO.getSortOrder());
-        String description = productCreateInDTO.getDescription();
-        String productAbstract = description.substring(0, Math.min(100, description.length()));
-        product.setProductAbstract(productAbstract);
+        product.setProductAbstract(productCreateInDTO.getProductAbstract());
         productMapper.insertSelective(product);
 
         Integer productId = product.getProductId();
@@ -74,9 +71,7 @@ public class ProductServiceImpl implements ProductService {
         product.setStatus(productUpdateInDTO.getStatus());
         product.setRewordPoints(productUpdateInDTO.getRewordPoints());
         product.setSortOrder(productUpdateInDTO.getSortOrder());
-        String description = productUpdateInDTO.getDescription();
-        String productAbstract = description.substring(0, Math.min(100, description.length()));
-        product.setProductAbstract(productAbstract);
+        product.setProductAbstract(productUpdateInDTO.getProductAbstract());
         productMapper.updateByPrimaryKeySelective(product);
 
         ProductDetail productDetail = new ProductDetail();
@@ -125,6 +120,7 @@ public class ProductServiceImpl implements ProductService {
         productShowOutDTO.setRewordPoints(product.getRewordPoints());
         productShowOutDTO.setSortOrder(product.getSortOrder());
         productShowOutDTO.setStockQuantity(product.getStockQuantity());
+        productShowOutDTO.setProductAbstract(product.getProductAbstract());
 
         productShowOutDTO.setDescription(productDetail.getDescription());
         String otherPicUrlsJson = productDetail.getOtherPicUrls();

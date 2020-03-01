@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.in;
 
 public class ReturnUpdateActionInDTO {
-
     private Integer returnId;
     private Byte action;
 

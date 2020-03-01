@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.out;
 
 public class AddressListOutDTO {
-
     private Integer addressId;
     private String receiverName;
     private String receiverMobile;

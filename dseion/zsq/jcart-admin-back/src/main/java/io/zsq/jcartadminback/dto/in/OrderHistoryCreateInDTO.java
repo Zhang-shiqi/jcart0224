@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.in;
 
 public class OrderHistoryCreateInDTO {
-
     private Long orderId;
     private Byte orderStatus;
     private String comment;

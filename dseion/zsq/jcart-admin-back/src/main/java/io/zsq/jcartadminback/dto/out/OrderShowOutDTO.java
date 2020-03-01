@@ -3,7 +3,6 @@ package io.zsq.jcartadminback.dto.out;
 import java.util.List;
 
 public class OrderShowOutDTO {
-
     private Long orderId;
     private Integer customerId;
     private Byte status;
@@ -88,8 +87,8 @@ public class OrderShowOutDTO {
         return shipAddress;
     }
 
-    public void setShipAddress(String shipAddiress) {
-        this.shipAddress = shipAddiress;
+    public void setShipAddress(String shipAddress) {
+        this.shipAddress = shipAddress;
     }
 
     public Double getShipPrice() {

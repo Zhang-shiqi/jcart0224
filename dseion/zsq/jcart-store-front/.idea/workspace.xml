@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\javas\maven\maven2" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../maven/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\javas\maven\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YWGSQ5RPMG3lei4jEy7PjeM8qI" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../zsq" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+</project>

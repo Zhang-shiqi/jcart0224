@@ -35,14 +35,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.zsq.jcartadminback.util" />
+      <recent name="io.zsq.jcartadminback.vo" />
       <recent name="io.zsq.jcartadminback.controller" />
       <recent name="io.zsq.jcartadminback.dto.out" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback\dto\out" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources\io.zsq.jcartadministrationback.dao" />
-      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,6 +83,7 @@
       <workItem from="1582783568451" duration="6583000" />
       <workItem from="1582850088138" duration="688000" />
       <workItem from="1582875768394" duration="233000" />
+      <workItem from="1583047344276" duration="2121000" />
     </task>
     <servers />
   </component>

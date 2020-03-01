@@ -1,8 +1,11 @@
 package io.zsq.jcartadminback.dao;
 
-
 import io.zsq.jcartadminback.po.Administrator;
+import io.zsq.jcartadminback.po.Administrator;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface AdministratorMapper {
     int deleteByPrimaryKey(Integer administratorId);
 
@@ -15,4 +18,9 @@ public interface AdministratorMapper {
     int updateByPrimaryKeySelective(Administrator record);
 
     int updateByPrimaryKey(Administrator record);
+
+//    custom
+
+    Administrator selectByUsername(@Param("username") String username);
+
 }

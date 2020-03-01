@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 public class ClientException extends ServletException {
 
+
     private String errCode;
 
     public ClientException(String errCode, String errMsg){

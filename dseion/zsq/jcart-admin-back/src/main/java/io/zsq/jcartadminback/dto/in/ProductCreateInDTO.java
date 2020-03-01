@@ -3,7 +3,6 @@ package io.zsq.jcartadminback.dto.in;
 import java.util.List;
 
 public class ProductCreateInDTO {
-
     private String productCode;
     private String productName;
     private Double price;
@@ -12,7 +11,8 @@ public class ProductCreateInDTO {
     private Byte status;
     private String mainPicUrl;
     private Integer rewordPoints;
-    private  Integer sortOrder;
+    private Integer sortOrder;
+    private String productAbstract;
     private String description;
     private List<String> otherPicUrls;
 
@@ -102,5 +102,13 @@ public class ProductCreateInDTO {
 
     public void setOtherPicUrls(List<String> otherPicUrls) {
         this.otherPicUrls = otherPicUrls;
+    }
+
+    public String getProductAbstract() {
+        return productAbstract;
+    }
+
+    public void setProductAbstract(String productAbstract) {
+        this.productAbstract = productAbstract;
     }
 }

@@ -1,20 +1,11 @@
 package io.zsq.jcartadminback.dto.out;
 
 public class AdministratorShowOutDTO {
-
     private Integer administratorId;
     private String username;
     private String email;
     private String avatarUrl;
     private Byte status;
-
-    public Byte getStatus() {
-        return status;
-    }
-
-    public void setStatus(Byte status) {
-        this.status = status;
-    }
 
     public Integer getAdministratorId() {
         return administratorId;
@@ -46,5 +37,13 @@ public class AdministratorShowOutDTO {
 
     public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
     }
 }

@@ -1,14 +1,14 @@
 package io.zsq.jcartstoreback.controller;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import io.cjf.jcartstoreback.constant.ClientExceptionConstant;
-import io.cjf.jcartstoreback.dto.in.*;
-import io.cjf.jcartstoreback.dto.out.CustomerGetProfileOutDTO;
-import io.cjf.jcartstoreback.dto.out.CustomerLoginOutDTO;
-import io.cjf.jcartstoreback.exception.ClientException;
-import io.cjf.jcartstoreback.po.Customer;
-import io.cjf.jcartstoreback.service.CustomerService;
-import io.cjf.jcartstoreback.util.JWTUtil;
+import io.zsq.jcartstoreback.constant.ClientExceptionConstant;
+import io.zsq.jcartstoreback.dto.in.*;
+import io.zsq.jcartstoreback.dto.out.CustomerGetProfileOutDTO;
+import io.zsq.jcartstoreback.dto.out.CustomerLoginOutDTO;
+import io.zsq.jcartstoreback.exception.ClientException;
+import io.zsq.jcartstoreback.po.Customer;
+import io.zsq.jcartstoreback.service.CustomerService;
+import io.zsq.jcartstoreback.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -50,7 +50,6 @@ public class CustomerController {
     public CustomerGetProfileOutDTO getProfile(@RequestAttribute Integer customerId){
         Customer customer = customerService.getById(customerId);
         CustomerGetProfileOutDTO customerGetProfileOutDTO = new CustomerGetProfileOutDTO();
-        customerGetProfileOutDTO.setCustomerId(customer.getCustomerId());
         customerGetProfileOutDTO.setUsername(customer.getUsername());
         customerGetProfileOutDTO.setRealName(customer.getRealName());
         customerGetProfileOutDTO.setMobile(customer.getMobile());

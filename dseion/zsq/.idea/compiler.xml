@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jcart-store-back" />
         <module name="jcart-admin-back" />
+        <module name="jcart-store-back" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jcart-admin-back" target="1.8" />
       <module name="jcart-store-back" target="1.8" />
+      <module name="jcart-store-front" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -1,6 +1,6 @@
 package io.zsq.jcartstoreback.dao;
 
-import io.cjf.jcartstoreback.po.Administrator;
+import io.zsq.jcartstoreback.po.Administrator;
 
 public interface AdministratorMapper {
     int deleteByPrimaryKey(Integer administratorId);

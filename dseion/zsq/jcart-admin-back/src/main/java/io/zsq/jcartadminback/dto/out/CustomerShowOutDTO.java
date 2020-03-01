@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.out;
 
 public class CustomerShowOutDTO {
-
     private Integer customerId;
     private String username;
     private String realName;
@@ -10,8 +9,8 @@ public class CustomerShowOutDTO {
     private String email;
     private Byte status;
     private Long createTimestamp;
-    private Boolean newsSubScribed;
-    private Integer rewordPonints;
+    private Boolean newsSubscribed;
+    private Integer rewordPoints;
     private Integer defaultAddressId;
 
     public Integer getCustomerId() {
@@ -78,20 +77,20 @@ public class CustomerShowOutDTO {
         this.createTimestamp = createTimestamp;
     }
 
-    public Boolean getNewsSubScribed() {
-        return newsSubScribed;
+    public Boolean getNewsSubscribed() {
+        return newsSubscribed;
     }
 
-    public void setNewsSubScribed(Boolean newsSubScribed) {
-        this.newsSubScribed = newsSubScribed;
+    public void setNewsSubscribed(Boolean newsSubscribed) {
+        this.newsSubscribed = newsSubscribed;
     }
 
-    public Integer getRewordPonints() {
-        return rewordPonints;
+    public Integer getRewordPoints() {
+        return rewordPoints;
     }
 
-    public void setRewordPonints(Integer rewordPonints) {
-        this.rewordPonints = rewordPonints;
+    public void setRewordPoints(Integer rewordPoints) {
+        this.rewordPoints = rewordPoints;
     }
 
     public Integer getDefaultAddressId() {

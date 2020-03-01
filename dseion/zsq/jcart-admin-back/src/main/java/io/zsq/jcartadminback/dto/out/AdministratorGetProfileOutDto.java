@@ -1,72 +1,58 @@
 package io.zsq.jcartadminback.dto.out;
 
-public class AdministratorGetProfileOutDto {
-
+public class AdministratorGetProfileOutDTO {
     private Integer administratorId;
     private String username;
-    private String realname;
+    private String realName;
     private String email;
     private String avatarUrl;
-    private Byte status;
-    private Long createTimesTamp;
-
+    private Long createTimestamp;
 
     public Integer getAdministratorId() {
-
         return administratorId;
-    }
-
-    public String getRealname() {
-        return realname;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getEmail() {
-
-        return email;
-    }
-
-    public String getAvatarUrl() {
-        return avatarUrl;
-    }
-
-    public Byte getStatus() {
-
-        return status;
-    }
-
-    public Long getCreateTimesTamp() {
-        return createTimesTamp;
     }
 
     public void setAdministratorId(Integer administratorId) {
         this.administratorId = administratorId;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
 
-    public void setRealname(String realname) {
-        this.realname = realname;
+    public String getRealName() {
+        return realName;
+    }
+
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
+
     public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
     }
 
-    public void setStatus(Byte status) {
-        this.status = status;
+    public Long getCreateTimestamp() {
+        return createTimestamp;
     }
 
-    public void setCreateTimesTamp(Long createTimesTamp) {
-        this.createTimesTamp = createTimesTamp;
+    public void setCreateTimestamp(Long createTimestamp) {
+        this.createTimestamp = createTimestamp;
     }
 }

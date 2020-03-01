@@ -1,6 +1,7 @@
 package io.zsq.jcartstoreback.dao;
 
-import io.cjf.jcartstoreback.po.Customer;
+
+import io.zsq.jcartstoreback.po.Customer;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

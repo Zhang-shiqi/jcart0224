@@ -1,6 +1,5 @@
 package io.zsq.jcartadminback.dao;
 
-
 import io.zsq.jcartadminback.po.Customer;
 
 public interface CustomerMapper {

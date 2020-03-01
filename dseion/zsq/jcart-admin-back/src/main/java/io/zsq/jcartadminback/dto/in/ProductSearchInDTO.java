@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.in;
 
 public class ProductSearchInDTO {
-
     private String productCode;
     private String productName;
     private Double price;

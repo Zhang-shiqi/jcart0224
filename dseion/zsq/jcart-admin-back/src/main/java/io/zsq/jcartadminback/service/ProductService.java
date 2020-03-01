@@ -16,7 +16,7 @@ public interface ProductService {
 
     void delete(Integer productId);
 
-    void batchDelete(List<Integer>productIds);
+    void batchDelete(List<Integer> productIds);
 
     Page<ProductListOutDTO> search(Integer pageNum);
 

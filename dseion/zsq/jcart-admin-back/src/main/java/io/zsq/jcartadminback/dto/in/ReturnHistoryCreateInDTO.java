@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.in;
 
 public class ReturnHistoryCreateInDTO {
-
     private Integer returnId;
     private Byte returnStatus;
     private Boolean customerNotifeid;

@@ -1,7 +1,6 @@
 package io.zsq.jcartadminback.dto.out;
 
 public class AdministratorListOutDTO {
-
     private Integer administratorId;
     private String username;
     private Byte status;
