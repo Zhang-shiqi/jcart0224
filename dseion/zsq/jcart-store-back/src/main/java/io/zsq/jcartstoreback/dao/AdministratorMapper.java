@@ -1,5 +1,6 @@
 package io.zsq.jcartstoreback.dao;
 
+
 import io.zsq.jcartstoreback.po.Administrator;
 
 public interface AdministratorMapper {

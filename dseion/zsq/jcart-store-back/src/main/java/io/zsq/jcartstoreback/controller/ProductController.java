@@ -1,14 +1,11 @@
 package io.zsq.jcartstoreback.controller;
 
 import com.github.pagehelper.Page;
-import io.zsq.jcartstoreback.dto.in.ProductSearchInDTO;
-import io.zsq.jcartstoreback.dto.out.PageOutDTO;
-import io.zsq.jcartstoreback.dto.out.ProductListOutDTO;
-import io.zsq.jcartstoreback.dto.out.ProductShowOutDTO;
-import io.zsq.jcartstoreback.service.ProductService;
-import io.zsq.jcartstoreback.dto.out.PageOutDTO;
-import io.zsq.jcartstoreback.dto.out.ProductShowOutDTO;
-import io.zsq.jcartstoreback.service.ProductService;
+import io.cjf.jcartstoreback.dto.in.ProductSearchInDTO;
+import io.cjf.jcartstoreback.dto.out.PageOutDTO;
+import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
+import io.cjf.jcartstoreback.dto.out.ProductShowOutDTO;
+import io.cjf.jcartstoreback.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +32,7 @@ public class ProductController {
 
     @GetMapping("/getById")
     public ProductShowOutDTO getById(@RequestParam Integer productId){
-        ProductShowOutDTO productShowOutDTO = productService.getById(productId);
+        ProductShowOutDTO productShowOutDTO = productService.getShowById(productId);
         return productShowOutDTO;
     }
 

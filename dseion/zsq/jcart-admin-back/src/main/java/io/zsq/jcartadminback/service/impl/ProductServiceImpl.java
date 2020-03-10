@@ -3,16 +3,17 @@ package io.zsq.jcartadminback.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+
 import io.zsq.jcartadminback.dao.ProductDetailMapper;
 import io.zsq.jcartadminback.dao.ProductMapper;
 import io.zsq.jcartadminback.dto.in.ProductCreateInDTO;
+import io.zsq.jcartadminback.dto.in.ProductSearchInDTO;
 import io.zsq.jcartadminback.dto.in.ProductUpdateInDTO;
 import io.zsq.jcartadminback.dto.out.ProductListOutDTO;
 import io.zsq.jcartadminback.dto.out.ProductShowOutDTO;
 import io.zsq.jcartadminback.po.Product;
 import io.zsq.jcartadminback.po.ProductDetail;
 import io.zsq.jcartadminback.service.ProductService;
-import io.zsq.jcartadminback.dto.in.ProductUpdateInDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -98,9 +99,15 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Page<ProductListOutDTO> search(Integer pageNum) {
+    public Page<ProductListOutDTO> search(ProductSearchInDTO productSearchInDTO,
+                                          Integer pageNum) {
         PageHelper.startPage(pageNum, 10);
-        Page<ProductListOutDTO> page = productMapper.search();
+        Page<ProductListOutDTO> page = productMapper
+                .search(productSearchInDTO.getProductCode(),
+                        productSearchInDTO.getStatus(),
+                        productSearchInDTO.getStockQuantity(),
+                        productSearchInDTO.getPrice(),
+                        productSearchInDTO.getProductName());
         return page;
     }
 

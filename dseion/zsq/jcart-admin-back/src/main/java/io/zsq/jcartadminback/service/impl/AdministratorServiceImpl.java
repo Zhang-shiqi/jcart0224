@@ -1,9 +1,10 @@
 package io.zsq.jcartadminback.service.impl;
 
 import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+
 import io.zsq.jcartadminback.dao.AdministratorMapper;
 import io.zsq.jcartadminback.po.Administrator;
-import io.zsq.jcartadminback.service.AdministratorService;
 import io.zsq.jcartadminback.service.AdministratorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,8 +30,16 @@ public class AdministratorServiceImpl implements AdministratorService {
     }
 
     @Override
+    public Administrator getByEmail(String email) {
+        Administrator administrator = administratorMapper.selectByEmail(email);
+        return administrator;
+    }
+
+    @Override
     public Integer create(Administrator administrator) {
-        return null;
+        administratorMapper.insertSelective(administrator);
+        Integer administratorId = administrator.getAdministratorId();
+        return administratorId;
     }
 
     @Override
@@ -40,16 +49,18 @@ public class AdministratorServiceImpl implements AdministratorService {
 
     @Override
     public void delete(Integer administratorId) {
-
+        administratorMapper.deleteByPrimaryKey(administratorId);
     }
 
     @Override
     public void batchDelete(List<Integer> administratorIds) {
-
+        administratorMapper.batchDelete(administratorIds);
     }
 
     @Override
     public Page<Administrator> getList(Integer pageNum) {
-        return null;
+        PageHelper.startPage(pageNum, 10);
+        Page<Administrator> page = administratorMapper.selectList();
+        return page;
     }
 }

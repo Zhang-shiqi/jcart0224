@@ -1,6 +1,7 @@
 package io.zsq.jcartadminback.dao;
 
 import com.github.pagehelper.Page;
+
 import io.zsq.jcartadminback.dto.out.ProductListOutDTO;
 import io.zsq.jcartadminback.po.Product;
 import org.apache.ibatis.annotations.Param;
@@ -26,6 +27,10 @@ public interface ProductMapper {
 
     int batchDelete(@Param("productIds") List<Integer> productIds);
 
-    Page<ProductListOutDTO> search();
+    Page<ProductListOutDTO> search(@Param("productCode") String productCode,
+                                   @Param("status") Byte status,
+                                   @Param("stockQuantity") Integer stockQuantity,
+                                   @Param("price") Double price,
+                                   @Param("productName") String productName);
 
 }

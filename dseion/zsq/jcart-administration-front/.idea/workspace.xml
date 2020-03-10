@@ -30,13 +30,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/viewmodels" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jcart-store-back" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\javas\dashixun\daima\zsq\jcart-administration-front\viewmodels" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-administration-front" />
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-administration-front\viewmodels" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -66,6 +66,7 @@
       <workItem from="1583047277154" duration="65000" />
       <workItem from="1583049526619" duration="326000" />
       <workItem from="1583131930501" duration="1227000" />
+      <workItem from="1583824705228" duration="128000" />
     </task>
     <servers />
   </component>

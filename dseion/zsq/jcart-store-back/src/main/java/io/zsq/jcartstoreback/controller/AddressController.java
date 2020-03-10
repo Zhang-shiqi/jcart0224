@@ -1,8 +1,10 @@
 package io.zsq.jcartstoreback.controller;
 
+
 import io.zsq.jcartstoreback.dto.in.AddressCreateInDTO;
 import io.zsq.jcartstoreback.dto.in.AddressUpdateInDTO;
 import io.zsq.jcartstoreback.dto.out.AddressListOutDTO;
+import io.zsq.jcartstoreback.dto.out.AddressShowOutDTO;
 import io.zsq.jcartstoreback.po.Address;
 import io.zsq.jcartstoreback.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/address")
+@CrossOrigin
 public class AddressController {
 
     @Autowired
@@ -25,7 +28,7 @@ public class AddressController {
         List<AddressListOutDTO> addressListOutDTOS = addresses.stream().map(address -> {
             AddressListOutDTO addressListOutDTO = new AddressListOutDTO();
             addressListOutDTO.setAddressId(address.getAddressId());
-            addressListOutDTO.setContent(address.getContent());
+            addressListOutDTO.setTag(address.getTag());
             addressListOutDTO.setReceiverName(address.getReceiverName());
             addressListOutDTO.setReceiverMobile(address.getReceiverMobile());
             addressListOutDTO.setContent(address.getContent());
@@ -33,6 +36,19 @@ public class AddressController {
         }).collect(Collectors.toList());
 
         return addressListOutDTOS;
+    }
+
+    @GetMapping("/getById")
+    public AddressShowOutDTO getById(@RequestParam Integer addressId){
+        Address address = addressService.getById(addressId);
+        AddressShowOutDTO addressShowOutDTO = new AddressShowOutDTO();
+        addressShowOutDTO.setAddressId(address.getAddressId());
+        addressShowOutDTO.setTag(address.getTag());
+        addressShowOutDTO.setReceiverName(address.getReceiverName());
+        addressShowOutDTO.setReceiverMobile(address.getReceiverMobile());
+        addressShowOutDTO.setContent(address.getContent());
+
+        return addressShowOutDTO;
     }
 
     @PostMapping("/create")

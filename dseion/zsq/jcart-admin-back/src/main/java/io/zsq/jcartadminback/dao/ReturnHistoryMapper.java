@@ -1,7 +1,13 @@
 package io.zsq.jcartadminback.dao;
 
-import io.zsq.jcartadminback.po.ReturnHistory;
 
+import io.zsq.jcartadminback.po.ReturnHistory;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
 public interface ReturnHistoryMapper {
     int deleteByPrimaryKey(Long returnHistoryId);
 
@@ -14,4 +20,9 @@ public interface ReturnHistoryMapper {
     int updateByPrimaryKeySelective(ReturnHistory record);
 
     int updateByPrimaryKey(ReturnHistory record);
+
+//    custom
+
+    List<ReturnHistory> selectListByReturnId(@Param("returnId") Integer returnId);
+
 }

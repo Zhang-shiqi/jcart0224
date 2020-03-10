@@ -1,5 +1,8 @@
 package io.zsq.jcartstoreback.service.impl;
+
+
 import io.zsq.jcartstoreback.dao.AddressMapper;
+import io.zsq.jcartstoreback.po.Address;
 import io.zsq.jcartstoreback.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,6 +14,12 @@ public class AddressServiceImpl implements AddressService {
 
     @Autowired
     private AddressMapper addressMapper;
+
+    @Override
+    public Address getById(Integer addressId) {
+        Address address = addressMapper.selectByPrimaryKey(addressId);
+        return address;
+    }
 
     @Override
     public List<Address> getByCustomerId(Integer customerId) {

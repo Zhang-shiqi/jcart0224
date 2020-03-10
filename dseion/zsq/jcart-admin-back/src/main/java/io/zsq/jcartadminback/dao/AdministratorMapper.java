@@ -1,9 +1,12 @@
 package io.zsq.jcartadminback.dao;
 
-import io.zsq.jcartadminback.po.Administrator;
+import com.github.pagehelper.Page;
+
 import io.zsq.jcartadminback.po.Administrator;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public interface AdministratorMapper {
@@ -22,5 +25,11 @@ public interface AdministratorMapper {
 //    custom
 
     Administrator selectByUsername(@Param("username") String username);
+
+    Administrator selectByEmail(@Param("email") String email);
+
+    int batchDelete(@Param("administratorIds") List<Integer> administratorIds);
+
+    Page<Administrator> selectList();
 
 }

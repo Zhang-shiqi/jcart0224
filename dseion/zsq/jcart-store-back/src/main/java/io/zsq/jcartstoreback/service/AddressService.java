@@ -1,11 +1,12 @@
 package io.zsq.jcartstoreback.service;
 
-
 import io.zsq.jcartstoreback.po.Address;
 
 import java.util.List;
 
 public interface AddressService {
+
+    Address getById(Integer addressId);
 
     List<Address> getByCustomerId(Integer customerId);
 

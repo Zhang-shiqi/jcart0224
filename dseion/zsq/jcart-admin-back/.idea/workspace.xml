@@ -29,23 +29,27 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jcart-administration-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/zsq/jcartadminback/service" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.zsq.jcartadminback.service.impl" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.zsq.jcartadminback.service.impl" />
+      <recent name="io.zsq.jcartadminback.vo" />
+      <recent name="io.zsq.jcartadminback.bean" />
       <recent name="io.zsq.jcartadminback.enumeration" />
       <recent name="io.zsq.jcartadminback.util" />
-      <recent name="io.zsq.jcartadminback.vo" />
-      <recent name="io.zsq.jcartadminback.controller" />
-      <recent name="io.zsq.jcartadminback.dto.out" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback\service" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback" />
+      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback\enumeration" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\java\io\zsq\jcartadminback\dto\out" />
       <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources" />
-      <recent name="D:\javas\dashixun\daima\zsq\jcart-admin-back\src\main\resources\io.zsq.jcartadministrationback.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,6 +90,7 @@
       <workItem from="1582875768394" duration="233000" />
       <workItem from="1583047344276" duration="2121000" />
       <workItem from="1583126110560" duration="3304000" />
+      <workItem from="1583823639542" duration="1031000" />
     </task>
     <servers />
   </component>

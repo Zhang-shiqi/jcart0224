@@ -3,13 +3,14 @@ package io.zsq.jcartstoreback.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import io.cjf.jcartstoreback.dao.ProductDetailMapper;
-import io.cjf.jcartstoreback.dao.ProductMapper;
-import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
-import io.cjf.jcartstoreback.dto.out.ProductShowOutDTO;
-import io.cjf.jcartstoreback.po.Product;
-import io.cjf.jcartstoreback.po.ProductDetail;
-import io.cjf.jcartstoreback.service.ProductService;
+
+import io.zsq.jcartstoreback.dao.ProductDetailMapper;
+import io.zsq.jcartstoreback.dao.ProductMapper;
+import io.zsq.jcartstoreback.dto.out.ProductListOutDTO;
+import io.zsq.jcartstoreback.dto.out.ProductShowOutDTO;
+import io.zsq.jcartstoreback.po.Product;
+import io.zsq.jcartstoreback.po.ProductDetail;
+import io.zsq.jcartstoreback.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,13 @@ public class ProductServiceImpl implements ProductService {
     private ProductDetailMapper productDetailMapper;
 
     @Override
-    public ProductShowOutDTO getById(Integer productId) {
+    public Product getById(Integer productId) {
+        Product product = productMapper.selectByPrimaryKey(productId);
+        return product;
+    }
+
+    @Override
+    public ProductShowOutDTO getShowById(Integer productId) {
 
         Product product = productMapper.selectByPrimaryKey(productId);
         ProductDetail productDetail = productDetailMapper.selectByPrimaryKey(productId);

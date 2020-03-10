@@ -21,11 +21,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jcart0224-master/jcart-store-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/zsq/jcartstoreback" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.zsq.jcartstoreback.bean" />
       <recent name="io.zsq.jcartstoreback.vo" />
       <recent name="io.zsq.jcartstoreback.util" />
       <recent name="io.zsq.jcartstoreback.constant" />
@@ -68,6 +69,7 @@
       <workItem from="1582882506714" duration="150000" />
       <workItem from="1583046453294" duration="803000" />
       <workItem from="1583049856134" duration="1660000" />
+      <workItem from="1583824835739" duration="638000" />
     </task>
     <servers />
   </component>

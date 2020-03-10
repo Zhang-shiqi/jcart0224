@@ -1,6 +1,7 @@
 package io.zsq.jcartstoreback.service.impl;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
+
 import io.zsq.jcartstoreback.dao.CustomerMapper;
 import io.zsq.jcartstoreback.dto.in.CustomerRegisterInDTO;
 import io.zsq.jcartstoreback.enumeration.CustomerStatus;
@@ -13,6 +14,7 @@ import java.util.Date;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
+
     @Autowired
     private CustomerMapper customerMapper;
 
@@ -50,6 +52,12 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer getById(Integer customerId) {
         Customer customer = customerMapper.selectByPrimaryKey(customerId);
+        return customer;
+    }
+
+    @Override
+    public Customer getByEmail(String email) {
+        Customer customer = customerMapper.selectByEmail(email);
         return customer;
     }
 
